@@ -27,6 +27,6 @@ install_share;
 
 dpkg_requires 'startsiden-javascript-qunit';
 dpkg_requires 'python';
-dpkg_requires 'startsiden-nodejs';
+dpkg_requires 'startsiden-nodejs|nodejs';
 
 WriteAll;
