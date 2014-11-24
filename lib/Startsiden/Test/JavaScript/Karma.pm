@@ -23,7 +23,7 @@ sub _generate_command {
         $bower_dir = $data->{directory} if $data->{directory};
     }
     my $bower =
-        -e 'bower.json' && !-d $bower_dir ? 'bower install --silent;' : '';
+        -e 'bower.json' && !-d $bower_dir ? 'bower install --silent --allow-root;' : '';
     my $npm_dir = 'node_modules';
     my $npm = -e 'package.json' && !-d $npm_dir ? 'npm install --silent;' : '';
     my $reporter_dir = 'karma-tab-reporter';
